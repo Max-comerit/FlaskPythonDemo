@@ -23,12 +23,12 @@ jobs:
 
       # Bygg Docker-imagen
       - name: Build Docker image
-        run: docker build -t akamaxg/flaskapp:latest .
+        run: docker build -t maxguclu/demo:latest .
 
       # Tagga Docker-imagen
       - name: Tag Docker image
-        run: docker tag akamaxg/flaskapp:latest akamaxg/flaskapp:latest
+        run: docker tag maxguclu/demo:latest maxguclu/demo:latest
 
       # Pusha Docker-imagen till Docker Hub
       - name: Push Docker image to Docker Hub
-        run: docker push akamaxg/flaskapp:latest
+        run: docker push maxguclu/demo:latest
